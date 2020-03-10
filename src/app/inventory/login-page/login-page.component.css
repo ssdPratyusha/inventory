@@ -1,0 +1,19 @@
+.inp input {
+    width: 55%;
+    height: 37px;
+    position: relative;
+    left: 10em;
+}.left-side {
+    background: #fff7f7;
+    position: relative;
+    /* width: 38em; */
+    right: 3em;
+}.left-side {
+    background: #fff7f7;
+    position: relative;
+    right: 3em;
+    border-bottom-left-radius: 44px;
+    /* border-radius: 71px; */
+    /* border-radius: 64px 0px 0px 60px; */
+    border-top-left-radius: 44px;
+}

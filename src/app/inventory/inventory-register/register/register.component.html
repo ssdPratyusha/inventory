@@ -1,0 +1,94 @@
+
+
+ 
+ 
+ 
+ <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-sm-6">
+                    
+                    <img src="./assets/inv.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+             <div id="backgrnd">
+            <h1>Register page</h1>
+          
+            <form [formGroup]="RegisterForm"  (ngSubmit)="onSubmit(RegisterForm.value)">
+                <!-- <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            
+                            <input type="text" formControlName="userid" placeholder=" Enter userId " class="form-control"/>
+                            <span class="text-danger" *ngIf='f.userid.invalid && (f.userid.touched ||submitted)'>userid is mandatory</span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-sm-6">
+                    
+                        <input formControlName='empid' class="form-control"  placeholder="Enter EmpId" required length="5"><br>
+                        <span class="text-danger" *ngIf='f.empid.invalid&&(f.empid.touched ||submitted)'>Employee ID  is mandatory</span>
+                                                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            
+                            <input type="text" formControlName="firstname" placeholder=" Enter Firstname " class="form-control"/>
+                            <span class="text-danger" *ngIf='f.firstname.invalid && (f.firstname.touched ||submitted)'>firstname is mandatory</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                 
+                        <input formControlName='lastname' class="form-control" placeholder="Enter lastname"><br>
+                        <span class="text-danger" *ngIf='f.lastname.invalid&&(f.lastname.touched ||submitted)'>lastname is mandatory</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                    
+                        <input formControlName='useremail' class="form-control"  placeholder="Enter useremail"  data-toggle="tooltip" data-placement="right" border-right-color="#00cc00" title="Please enter valid Email as John@example.org"><br>
+                        <span class="text-danger" *ngIf='f.useremail.invalid&&(f.useremail.touched ||submitted)'>useremail  is mandatory</span>
+                                                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-sm-6">
+                        
+
+                        <input type="password" formControlName='password' class="form-control"  placeholder="Enter Password"><br>
+  <span class="text-danger" *ngIf='f.password.invalid&&(f.password.touched ||submitted)'>password is mandatory</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                  
+                        <input formControlName='userrole' class="form-control"  placeholder="Enter Userrole"><br>
+                        <span class="text-danger" *ngIf='f.userrole.invalid&&(f.userrole.touched ||submitted)'>User role is mandatory</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                     
+                        <input  formControlName='dateofbirth' class="form-control"  placeholder="Enter Dateofbirth"><br>
+                        <span class="text-danger" *ngIf='f.dateofbirth.invalid&&(f.dateofbirth.touched ||submitted)'>Date of birth is mandatory</span>
+                    </div>
+                </div><br>
+                <button type="submit" class="btn btn-success" >Submit</button>
+            </form>
+    </div>
+    </div>
+    </div>
+ </div>
+
+
+
+
+
+    
+    
